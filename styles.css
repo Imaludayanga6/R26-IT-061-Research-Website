@@ -29,3 +29,21 @@
 .team-directory-title+.team-grid{margin-top:22px}
 @media(max-width:780px){.team-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.team-directory-title{flex-direction:column;gap:8px}}
 @media(max-width:520px){.team-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.team-photo figcaption{font-size:9px;bottom:10px;left:11px}}
+
+/* Team hierarchy: academic guidance above student researchers */
+.team-directory-title--first{margin-top:56px}
+.guidance-photo-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;max-width:790px;margin:28px auto 0}
+.guidance-photo{aspect-ratio:5/4.4;border-color:#4a6969}
+.guidance-photo img{object-position:center 26%}
+.guidance-name-list{max-width:790px;margin:14px auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.guidance-name{padding:18px 20px;background:#10232c;border:1px solid #36515a;display:flex;flex-direction:column;gap:8px}
+.guidance-name span{font-size:10px;letter-spacing:1.6px;color:var(--lime)}
+.guidance-name strong{font:600 19px 'Space Grotesk',sans-serif;color:#f2faf7}
+.team-researcher-header{margin-top:80px}
+.researcher-photo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px;margin-top:28px}
+.researcher-photo-grid .team-photo{aspect-ratio:4/4.6}
+.team-member-directory{margin-top:18px}
+.team-member-directory .member{min-height:205px;padding:21px}
+.team-member-directory .avatar{display:none}
+@media(max-width:780px){.researcher-photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.guidance-photo-grid{gap:12px}.guidance-name-list{gap:12px}.team-researcher-header{margin-top:66px}}
+@media(max-width:520px){.guidance-name-list{grid-template-columns:1fr}.guidance-name strong{font-size:17px}.guidance-photo-grid{gap:9px}.researcher-photo-grid{gap:9px}.team-member-directory{margin-top:16px}}
