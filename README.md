@@ -25,3 +25,25 @@ A responsive informational research website, **separate from the dengue mobile a
 
 ## Website size
 The source package was intentionally kept small and self-contained. It does not require a backend, API key or paid hosting. `index.html` is the starting file.
+
+
+## Contact form setup
+
+The contact section uses FormSubmit (https://formsubmit.co/) via a client-side AJAX POST.
+The destination is currently set to `it22214034@my.sliit.lk`, taken from the research paper.
+
+1. Confirm the research team approves this destination address and the use of a third-party form processor.
+2. Deploy the website and submit a test message.
+3. **The owner of that email inbox must follow FormSubmit's activation email** before messages can be delivered.
+4. Send a second test submission and confirm actual receipt. Until then, delivery is unverified.
+5. To change the recipient, change the `action` URL on `#contactForm` in `index.html`.
+6. Form submissions are handled by FormSubmit, not Vercel; do not submit private health or personal medical information.
+
+The form does not include custom backend email sending or guaranteed spam filtering.
+
+
+## Team portrait gallery update
+
+Six submitted photos were optimized as `assets/team/portrait-01.webp` through `portrait-06.webp` and added to the Team section. The photos are displayed in the same upload order. **Their identities have not been matched to researcher/supervisor names**: confirm each correspondence before labeling portraits with names or roles. Member details below the gallery are sourced from the supplied research paper.
+
+No changes to `script.js` or the contact form. The contact form needs an HTTP(S) origin and a configured/activated receiving inbox; test on Vercel, not via `file://`. Ensure team permission to publicly publish each image and linked document.
